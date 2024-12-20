@@ -1,0 +1,59 @@
+
+
+.App{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6EACDA;
+}
+
+.board{
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.cell{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell img{
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
+.white{
+    background-color: #021526;
+}
+
+.black{
+    background-color: #03346E;
+}
+
+.selected{
+    background-color: brown;
+}
+
+.available{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.lost{
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: lightgray;
+}
